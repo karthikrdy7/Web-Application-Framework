@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.banner{
+    text-align:center;
+    padding:70px;
+    background:linear-gradient(#1976d2,#42a5f5);
+    color:white;
+}
+
+.banner button{
+    margin-top:20px;
+    padding:10px 25px;
+    border:none;
+    background:white;
+    color:#1976d2;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.banner button:hover{
+    background:yellow;
+}
+
+.about,
+.schedule,
+.events,
+.register,
+.committee{
+    padding:40px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table,
+th,
+td{
+    border:1px solid gray;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+}
+
+th,
+td{
+    padding:12px;
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px gray;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    margin:10px;
+}
+
+.card p{
+    padding:10px;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transition:.3s;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form select,
+form textarea{
+    margin:10px 0;
+    padding:10px;
+}
+
+form button{
+    padding:12px;
+    background:#0d47a1;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#1565c0;
+}
+
+.members{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.member{
+    background:white;
+    padding:20px;
+    margin:10px;
+    width:250px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+.grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+footer{
+    flex-direction:column;
+}
+
+}
+
+@media(max-width:500px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.members{
+    flex-direction:column;
+    align-items:center;
+}
+
+.banner{
+    padding:40px;
+}
+
+}
