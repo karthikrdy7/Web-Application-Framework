@@ -7,13 +7,13 @@
 
 body {
     background: #f5f5f5;
-    color: #333;
+    color: #000000;
 }
 
 /* Header */
 
 header {
-    background: #2c3e50;
+    background: #000000;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ nav a:hover {
 }
 
 .btn {
-    background: orange;
+    background: rgb(7, 7, 7);
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -124,13 +124,13 @@ nav a:hover {
     margin-top: 10px;
     padding: 10px 18px;
     border: none;
-    background: #2c3e50;
+    background: #000000;
     color: white;
     cursor: pointer;
 }
 
 .card button:hover {
-    background: orange;
+    background: rgb(0, 0, 0);
 }
 
 /* Table */
@@ -204,7 +204,7 @@ textarea {
 
 button {
     padding: 12px;
-    background: #2c3e50;
+    background: #000000;
     color: white;
     border: none;
     cursor: pointer;
@@ -219,7 +219,7 @@ button:hover {
 footer {
     display: flex;
     justify-content: space-around;
-    background: #2c3e50;
+    background: #000000;
     color: white;
     padding: 30px;
     flex-wrap: wrap;
