@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Prime Number Check</h2>
+<h3>program 10</h3>
+<p id="result"></p>
+
+<script>
+let number = 78;
+let isPrime = true;
+
+if (number <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+}
+
+if (isPrime) {
+    document.getElementById("result").innerHTML =
+        number + " is a Prime Number";
+} else {
+    document.getElementById("result").innerHTML =
+        number + " is Not a Prime Number";
+}
+</script>
+</body>
+</html>
